@@ -1,0 +1,940 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: Epilogue;
+}
+
+nav {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+    position: fixed;
+    background-color: white;
+    z-index: 10;
+}
+
+ul {
+    display: flex;
+    gap: 20px;
+}
+
+.home {
+    width: 100%;
+    height: calc(100vh - 60px);
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 100px 0px 100px;
+}
+
+.text {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    padding: 100px 0px;
+}
+
+.text p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.text h1 {
+    font-size: 100px;
+    font-weight: 700;
+}
+
+.text h4 {
+    font-size: 20px;
+    font-weight: 400;
+    width: 417px;
+    margin-top: -30px;
+}
+
+nav a {
+    color: #0000007b;
+}
+
+.image {
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+
+.image img:first-child {
+    position: absolute;
+    top: 50px;
+    right: 23px;
+}
+
+.image img:nth-child(2){
+    position: absolute;
+    top: 38px;
+    right: 0px;
+}
+
+.image img:last-child {
+    position: absolute;
+    bottom: 100px;
+    left: 100px;
+}
+
+.sponsor {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    padding: 0px 100px;
+}
+
+.about {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 100px;
+}
+
+.about .box {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.box h3 {
+    font-size: 27px;
+    font-weight: 600;
+}
+
+.box p {
+    font-weight: 400;
+    text-align: center;
+    width: 240px;
+}
+
+.art {
+    width: 100%;
+    height: 180vh;
+    padding: 0px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.art h1 {
+    text-align: center;
+    padding: 50px 0px;
+}
+
+.all {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.all .box {
+    width: 25%;
+    height: 30%;
+}
+
+.all .box img {
+    width: 100%;
+}
+
+.all .box p {
+    text-align: start;
+    font-weight: 600;
+    width: 100%;
+    padding: 10px 0px;
+}
+
+.all .box p {
+    font-size: 25px;
+}
+
+.footer {
+    width: 100%;
+    height: 60vh;
+    background-color: #2D2D2D;
+    color: #ffffff77;
+    padding: 50px 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.footer h4{
+    font-size: 28px;
+    font-weight: 300;
+    padding: 5px 0px;
+}
+
+.footer ul a{
+    color: #ffffff80;
+    font-size: 20px;
+}
+.text{
+    width: 60%;
+    height: 100%;
+    margin-top: -80px;
+}
+.study{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 100px;
+}
+.study .text1{
+    width: 50%;
+    height: 100%;
+    padding-top: 100px;
+
+}
+.text1 h1{
+    font-weight: 600;
+    font-size: 32px;
+}
+.text1 p{
+    width: 40%;
+    font-size: 17px;
+    line-height: 18px;
+    margin-top: 20px;
+}
+form{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-top: 100px;
+    gap: 20px;
+}
+.input1{
+    width: 100%;
+    padding: 25px;
+    background-color: #DFDFDF;
+    border: none;
+}
+.input2{
+    width: 100%;
+    padding: 25px;
+    background-color: #DFDFDF;
+    border: none;
+}
+textarea{
+    width: 100%;
+    height: 35%;
+    background-color: #DFDFDF;
+    border: none;
+    color: #2d2d2d80;
+    padding: 25px;
+
+}
+.submit{
+    width: 30%;
+    padding: 25px;
+    color: #DFDFDF;
+    background-color: #000;
+}
+.homealoqa{
+    position: relative;
+    display: flex;
+    gap: 160px;
+    justify-content: space-between;
+    width: 100%;
+    height: 130vh;
+    
+}
+.sidealoqa1{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    width: 50%;
+    
+}
+.sidealoqa1 .img1{
+    padding: 200px 100px;
+}
+.textaloqa{
+    position: absolute;
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+    padding: 0px 100px;
+    top: 570px;
+    
+}
+.textaloqa h3{
+
+   font-size: 25px;
+    
+}
+.textaloqa p{
+    font-weight: 700;
+    font-size: 17px;
+     color:#00000080 ;
+}
+.sidealoqa2{
+    position: relative;
+    width: 50%;
+}
+.sidealoqa2 .kattarasm  {
+    
+    margin-top: 208px;
+    width: 473px;
+    height: 643px;
+}
+.sidealoqa2 .yawilrasm{
+    position: absolute;
+    top: 270px;
+    right: 140px;
+    width: 143px;
+    height: 143px;
+}
+.sidealoqa2 .qizilrasm{
+    position: absolute;
+    width: 158px;
+    height: 156px;
+    right: 500px;
+    top: 610px;
+}
+.kickina{
+    position: absolute;
+    top: 799px;
+    right: 300px;
+    width: 72px;
+    height: 47px;
+}
+.ortanca{
+    position: absolute;
+    width: 72px;
+    height: 90px;
+    top: 755px;
+    right: 200px;
+}
+.katta{
+    position: absolute;
+    width: 72px;
+    height: 186px;
+    top: 655px;
+    right: 100px;
+}
+.rasmtext{
+    position: absolute;
+    bottom: 160px;
+    right:390px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.rasmtext p{
+
+    color: rgb(241, 244, 247);
+}
+.rasmtext h3{
+    color: white;
+    font-weight: 700;
+    font-size: 30px;
+}
+.textaloqa2{
+    display: flex;
+    flex-direction: column;
+}
+.boxtext1{
+   display: flex;
+   align-items: center;
+   padding: 10px 100px;
+   gap: 30px;
+}
+.boxtext1 p{
+    font-weight: 400px;
+    font-size: 20px;
+    color: #2D2D2D;
+}
+
+.boxtext2{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 10px 100px;
+   gap: 30px;
+}
+.boxtext3{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 10px 100px;
+   gap: 30px;
+}
+.nuqta{
+    width: 6px ;
+    height: 6px;
+}
+.iconsbox{
+    position: absolute;
+    top: 900px;
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 120px;
+    
+}
+.akademikpage1{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+
+}
+.akademikside1{
+    width: 60%;
+    height: 100%;
+    padding-left: 100px;
+    position: relative;
+}
+.akademikside1 img:first-child{
+    position: absolute;
+    top: 100px;
+}
+.akademikside1 img:nth-child(2){
+    position: absolute;
+    top: 30%;
+    left: 78%;
+}
+.akademikside1 h1{
+    position: absolute;
+    top: 150px;
+    font-weight: 700;
+    font-size: 96px;
+    color: #2D2D2D;
+}
+.akademikside1 p{
+    position: absolute;
+    top: 500px;
+    width: 283px;
+    font-size: 20px ;
+    font-weight: 400;
+}
+.akademikside2{
+    width: 40%;
+    height: 100%;
+    background-image: url(./assets/main.png);
+    background-size: cover;
+    background-position: center;
+}
+.akademikpage1 .inside{
+    position: absolute;
+    top: 90%;
+    height: 5%;
+    margin-top: 36px;
+    display: flex;
+    width: 100%;
+}
+
+.akademikside1 .inside h4{
+    color: black;
+    font-size: 20px;
+    font-weight: 570;
+}
+.akademikpage1 .inside h4:nth-child(2){
+    color: #2D2D2D80;
+    border-bottom: 3px solid #2d2d2d40;
+    width: 250px;
+}
+.akademikpage1 .inside h4:nth-child(3){
+    color: #2D2D2D80;
+    border-bottom: 3px solid #2d2d2d40;
+    width: 400px;
+}
+  
+.akademikpage1 .inside h4:nth-child(1){
+    color: black;
+    border-bottom: 3px solid #2d2d2d75 ;
+    width: 200px;
+}
+.akademikpage2{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 100px;
+}
+.dizayn{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.dizayn h1{
+    font-weight: 700;
+    font-size: 27px;
+}.akademikpage3{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    gap: 10px;
+    padding: 30px 20px;
+}
+.yotoqbox1{
+    width: 50%;
+    
+    display: flex;
+    gap: 70px;
+    padding: 20px 80px;
+}
+.yotoqtext{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    padding: 10px 20px;
+}
+
+  
+.yotoqtext h1{
+    font-weight: 570;
+    font-size: 52px;
+    color: #2D2D2D80;
+}
+.odamlar{
+    width: 876px;
+    height: 429px;
+    padding: 10px 100px;
+}
+.yotoqtext2{
+    padding: 30px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.yotoqtext2 h1{
+    font-weight: 700;
+    font-size: 48px;
+    color: #2D2D2DE5;
+}
+.yotoqtext2 p{
+   font-weight: 400;
+   font-family: 20px;
+   width: 530px;
+}
+.yotoqxona2 .odam{
+    width: 505px;
+    height: 750px;
+    margin-top: 10px;
+
+}
+.yotoqtext4 p{
+    font-weight: 700;
+    font-size: 20px;
+}
+.yotoqxona2 p{
+    color: #2d2d2d40;
+    font-weight: 700;
+    font-size: 20px;
+}
+.yotoqbox2{
+    display: flex;
+    gap: 20px;
+}
+.yotoqbox3{
+    display: flex;
+    gap: 20px;
+}
+.yotoqbox4{
+    display: flex;
+    gap: 20px;
+}
+.yotoqtext4{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 50px 15px;
+}
+.akademikpage4{
+    width: 100%;
+    height: 100vh;
+}
+.akademikpage4 h1{
+
+    display: flex;
+    padding: 30px 50px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 400px;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    font-size: 17px;
+}
+.akademikpage4{
+
+    width: 100%;
+    height: 150vh;  
+}
+.akademikpage4 img {
+    position: relative;
+    margin-top: 400px;
+    padding: 50px 115px;
+    width: 100%;
+    height:65% ;
+}
+.akademikpage4 h2{
+    position: absolute;
+    color: white;
+    font-weight: 700;
+    font-size: 17px;
+    justify-content: center;
+    text-align: center;
+    left: 700px;
+    bottom: 150px;
+    top: 2300px;
+    width: 195px;
+}
+.akademikpage4 h3{
+    position: absolute;
+    left: 300px;
+    bottom: 300px;
+    color:#FFFFFF80;
+    top: 2400px;
+    font-weight: 700;
+    font-size: 32px;
+}
+.akademikpage4 .sanat{
+    position: absolute;
+    left: 310px;
+    bottom: 300px;
+    color:#FFFFFF80;
+    top: 2450px;
+    font-weight: 700;
+    font-size: 32px;
+}
+.akademikpage4 .arcitek{
+    position: absolute;
+    left: 330px;
+    bottom: 300px;
+    color:white;
+    top: 2500px;
+    font-weight: 700;
+    font-size: 32px;
+}
+.akademikpage4 .hayotiy{
+    position: absolute;
+    left: 305px;
+    bottom: 300px;
+    color :#FFFFFF80;
+    top: 2550px;
+    font-weight: 700;
+    font-size: 32px;
+}
+.akademikpage4 .web{
+    position: absolute;
+    left: 290px;
+    bottom: 300px;
+    color :#FFFFFF80;
+    top: 2610px;
+    font-weight: 700;
+    font-size: 32px;
+}
+.akademikpage4 .arxitek{
+    position: absolute;
+    left: 1000px;
+    bottom: 500px;
+    color :white;
+    top: 2610px;
+    font-weight: 700;
+    font-size: 48px;
+}
+.akademikpage4 .lorem{
+    position: absolute;
+    left: 1000px;
+    bottom: 500px;
+    color :white;
+    top: 2670px;
+    font-weight: 400;
+ font-size: 20px;
+    width: 354px;
+}
+.akademikpage4 p{
+    position: absolute;
+    left: 1010px;
+    bottom: 600px;
+    top:2790px ;
+}
+
+
+.akademikpage5{
+    width: 100%;
+    height: 40vh;
+}
+.amakivaholalar{
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 125px;
+
+}
+.amakibox1{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.amakivaholalar p{
+    text-align: center;
+    font-size: 17px;
+    font-weight: 400;
+    color: #2D2D2D;
+}
+.amakivaholalar h1{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    color:#2D2D2D ;
+}
+.ichki{
+    color: #2D2D2D;
+    
+}
+nav ul a:hover{
+  color: black;
+  border-bottom: 2px solid black;
+  padding: 5px 0px;
+  transition: .3s;
+}
+.aboutpage{
+    
+    width: 105%;
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+}
+.univertarixi{
+    position: absolute;
+    bottom: 353px;
+    left: 25px;
+    
+
+    margin-top: 200px;
+    margin-left: 110px;
+}
+.qizilca{
+    position: relative;
+    margin-top: 150px;
+    margin-left: 100px;
+}
+.amsterdamca{
+    position: absolute;
+    
+    z-index: 10;
+    top: 200px;
+    left: 95px;
+}
+.amsterdambek{
+    width: 239px;
+    position: absolute;
+    z-index: 15;
+    font-weight: 700;
+    font-size: 40px;
+    color: white;
+    left: 200px ;
+    top: 500px;
+}
+
+.kokca{
+    position: absolute;
+    top: 70px;
+    left: 100px;
+}
+.bargca{
+    position: absolute;
+    top: 260px;
+    left: 450px;
+}
+.aboutside1{
+
+   width: 50%;
+   
+}
+.aboutside2{
+   width: 50%;
+margin-left: 200px;
+   
+}
+.partalar{
+    position: relative;
+    margin-top: 80px;
+    
+}
+.aboutside2 h2{
+    position: absolute;
+    color: white;
+    bottom: 400px;
+    font-weight: 700;
+    font-size: 48px;
+    width: 396px;
+    right: 10%;
+    top: 250px;
+}
+.aboutpage2{
+    width: 100%;
+    height: 40px;
+    padding: 0px 30px;
+    
+    justify-content: center;
+    margin-right: 90px;
+}
+.aboutpage3{
+    display: flex;
+    width: 100%;
+    height: 170vh;
+    justify-content: space-between;
+    gap: 100px;
+    padding: 30px 60px;
+}
+.figmapic{
+    margin-top: 260px;
+    margin-left: 100px;
+}
+.kulrang{
+    font-weight: 700;
+    font-size: 20px;
+    color: #2D2D2D80;
+}
+.sidetext h1{
+ font-weight: 700;
+ font-size: 48px;
+}
+.sidetext{
+    width: 172px;
+    width: 110px;
+    gap: 15px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.box1sid{
+    width: 50%;
+    justify-content: space-between;
+    display: flex;
+    gap: 110px;
+    padding: 20px 100px;
+}
+.aboutside3{
+    position: relative;
+    width: 50%;
+}
+.aboutside4{
+    width: 50%;
+}
+.figmapic3{
+    margin-top: 260px;
+}
+.ptext2{
+    position: absolute;
+    top: 1000px;
+    right: 10px;
+    left: 80px;
+    color: black;
+    font-weight: 700;
+    font-size: 48px;
+    width: 733px;
+    height: 143px;
+}
+.ptext3{
+    position: absolute;
+    top: 1170px;
+    right: 160px;
+    color: #000;
+    width: 458px;
+    height: 42px;
+    font-weight: 400;
+    font-size: 20px;
+    color: #2D2D2DCC;
+    
+}
+.poffigma{
+    font-weight: 700;
+    font-size: 20px;
+    color:#2D2D2D80;
+    width: 370px;
+    height: 63px;
+}
+.boxtextca1{
+    display: flex;
+    gap: 20px;
+    padding: 20px 50px;
+}
+.aboutpage4{
+    width: 100%;
+    height: 130vh;
+}
+.gumbaz{
+    margin-top: 80px;
+    margin-left: 130px;
+}
+.aboutside5{
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    
+}
+.ewik{
+    margin-top: 80px;
+}
+.textside4{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 130px;
+}
+.textside4 h2{
+    width: 602px;
+    height: 98px;
+    font-weight: 700;
+    font-size: 48px;
+    color: #424242;
+}
+.textside4 p{
+    width: 714px;
+    height: 105px;
+    font-weight: 400;
+    font-size: 20px;
+    color: #2D2D2DCC;
+}
+.amsterdamxon{
+    position: absolute;
+    margin-left: 1070px;
+    top: 2555px;
+
+  
+}
+.imgamst{
+    z-index: 19;
+    width: 259px;
+    height: 42px;
+    position: absolute;
+    left: 1130px;
+   top: 2670px ;
+}
+
+
+
+
